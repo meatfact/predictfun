@@ -302,6 +302,9 @@ async function monitorLoop(trackedMarkets: TrackedMarket[]) {
         for (const tracked of trackedMarkets) {
             await checkAndRebalance(tracked);
         }
+
+        // Wait 30 seconds before next iteration
+        await new Promise(resolve => setTimeout(resolve, 30000));
     }
 }
 
