@@ -1,0 +1,25 @@
+{
+  "name": "predict-fun-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cancel": "tsx cancel_orders.ts",
+    "dev": "tsx --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@predictdotfun/sdk": "^1.2.6",
+    "axios": "^1.13.3",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
